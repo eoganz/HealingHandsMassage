@@ -42,7 +42,8 @@ namespace MassageSite.Controllers
 
             return View();
         }
-
+        
+        
         [HttpPost]
         public ActionResult Register(User user)
         {
