@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Windows;
 
 namespace MassageSite.Controllers
 {
@@ -49,7 +50,7 @@ namespace MassageSite.Controllers
             {
                 context.Users.Add(user);
                 var count = context.SaveChanges();
-
+                
                 Console.WriteLine("{0} records saved to database", count);
 
             }
