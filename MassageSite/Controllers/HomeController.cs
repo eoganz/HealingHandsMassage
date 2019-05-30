@@ -50,10 +50,9 @@ namespace MassageSite.Controllers
             if(ModelState.IsValid)
             {
                 context.Users.Add(user);
-                Console.WriteLine(context.Users);
-                context.SaveChanges();
+                var count = context.SaveChanges();
                 
-                Console.WriteLine("{0} records saved to database");
+                Console.WriteLine("{0} records saved to database", count);
 
             }
 
