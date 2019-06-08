@@ -13,6 +13,12 @@ namespace MassageSite.Models
     {
         public UserContext(): base()
         {
+            User admin = new User{
+                FirstName = "Jake",
+                LastName = "Mettler",
+                Id = int.MaxValue,
+                Email = "jakeemettler@gmail.com",
+                Password = "12345"};
 
         }
 
