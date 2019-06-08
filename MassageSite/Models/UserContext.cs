@@ -23,5 +23,18 @@ namespace MassageSite.Models
         {
             return Users.Find(id);
         }
+
+        public User GetUserByPhoneNumber(string phoneNumber)
+        {
+            foreach(var user in Users)
+            {
+                if(phoneNumber == user.PhoneNumber)
+                {
+                    return user;
+                }
+            }
+
+            return null;
+        }
     }
 }
