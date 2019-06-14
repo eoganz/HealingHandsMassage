@@ -13,21 +13,11 @@ namespace MassageSite.Models
     {
         public UserContext(): base()
         {
-            User admin = new User{
-                FirstName = "Jake",
-                LastName = "Mettler",
-                Email = "jakeemettler@gmail.com",
-                Password = "12345"};
 
         }
 
         public virtual DbSet<User> Users { get; set; }
 
-
-        public User GetUserById(int id)
-        {
-            return Users.Find(id);
-        }
 
         public User GetUserByPhoneNumber(string phoneNumber)
         {
