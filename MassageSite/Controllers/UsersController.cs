@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using MassageSite.Models;
@@ -45,19 +46,17 @@ namespace MassageSite.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(User user)
+        public async Task<ActionResult> Login(User user)
         {
             if(ModelState.IsValid)
             {
-                foreach (User person in db.Users)
+                //Need help
+                var curUser = await db.GetUserByEmail(user.Email);
+                if(user != null)
                 {
-                    if(user.Email == person.Email && user.Password == person.Password)
-                    {
-                        return View(person);
-                    }
+                    return RedirectToAction("Index");
                 }
             }
-
             return View();
             
             

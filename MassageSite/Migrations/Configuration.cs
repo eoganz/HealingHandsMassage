@@ -9,7 +9,7 @@ namespace MassageSite.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(MassageSite.Models.UserContext context)
