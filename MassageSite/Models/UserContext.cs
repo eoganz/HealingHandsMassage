@@ -18,6 +18,18 @@ namespace MassageSite.Models
 
         public virtual DbSet<User> Users { get; set; }
 
+        public User GetUserByEmail(string email)
+        {
+            foreach (var user in Users)
+            {
+                if (email == user.Email)
+                {
+                    return user;
+                }
+            }
+
+            return null;
+        }
 
         public User GetUserByPhoneNumber(string phoneNumber)
         {
