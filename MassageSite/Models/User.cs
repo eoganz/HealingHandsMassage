@@ -18,6 +18,7 @@ namespace MassageSite.Models
         public string LastName { get; set; }
 
         [Required]
+        [Key]
         [EmailAddress]
         public string Email { get; set; }
 

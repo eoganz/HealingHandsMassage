@@ -16,7 +16,7 @@ namespace MassageSite.Controllers
 
         // GET: Users
         // TODO: Remove FOR DEV PURPOSES ONLY
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public ActionResult Index()
         {
             return View(db.Users.ToList());
