@@ -32,3 +32,27 @@ textarea {
 {
     margin-right: 1.25em;
 }
+
+.rightEditableBox
+{
+    float: right;
+    border: 1px solid black;
+}
+
+.mainIntro
+{
+    display:flex;
+}
+
+.rightEditableBox
+{
+    padding: 10px;
+    margin: 10px;
+}
+
+.home-Pic
+{
+}
+
+.main-para {
+}

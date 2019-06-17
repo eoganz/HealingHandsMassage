@@ -46,20 +46,20 @@ namespace MassageSite.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Login(User user)
+        public ActionResult Login(User user)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 //Need help
-                var curUser = await db.GetUserByEmail(user.Email);
-                if(user != null)
+                //var curUser = await db.GetUserByEmail(user.Email);
+                if (user != null)
                 {
                     return RedirectToAction("Index");
                 }
             }
             return View();
-            
-            
+
+
         }
 
         // GET: Users/Create
