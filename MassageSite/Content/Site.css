@@ -36,7 +36,7 @@ textarea {
 .rightEditableBox
 {
     float: right;
-    border: 1px solid black;
+    border: 2.5px solid black;
 }
 
 .mainIntro
@@ -48,11 +48,33 @@ textarea {
 {
     padding: 10px;
     margin: 10px;
+    background-color: white;
 }
 
 .home-Pic
 {
 }
 
-.main-para {
+.main-para
+{
+}
+
+.body-content {
+    background-color: #61cced;
+}
+
+.mainHeader
+{
+    position:relative;
+    text-align:center;
+    color: green;
+}
+
+.headerText
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 50%;
 }
