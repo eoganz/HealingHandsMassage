@@ -46,12 +46,12 @@ namespace MassageSite.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(User user)
+        public  ActionResult Login(User user)
         {
             if (ModelState.IsValid)
             {
                 //Need help
-                //var curUser = await db.GetUserByEmail(user.Email);
+                UserHelper.GetUserByEmail(user.Email, db);
                 if (user != null)
                 {
                     return RedirectToAction("Index");
