@@ -13,7 +13,7 @@ namespace MassageSite.Controllers
 {
     public class UsersController : Controller
     {
-        private UserContext db = new UserContext();
+        public UserContext db = new UserContext();
 
         // GET: Users
         // TODO: Remove FOR DEV PURPOSES ONLY
@@ -51,7 +51,6 @@ namespace MassageSite.Controllers
             if (ModelState.IsValid)
             {
                 //Need help
-
 
                 UserHelper.CheckCredentials(user.Email, user.Password, db);
                 if (user != null)
