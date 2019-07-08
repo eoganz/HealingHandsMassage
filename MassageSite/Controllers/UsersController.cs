@@ -50,7 +50,6 @@ namespace MassageSite.Controllers
         {
             if (ModelState.IsValid)
             {
-                //Need help
 
                 UserHelper.CheckCredentials(user.Email, user.Password, db);
                 if (user != null)
