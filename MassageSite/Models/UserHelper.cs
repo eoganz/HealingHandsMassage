@@ -32,15 +32,6 @@ namespace MassageSite.Models
             {
                 return true;
             }
-            //var userResult = from thisUser in context.Users
-                             //where thisUser.Email == email &&
-                             //thisUser.Password == password
-                             //select thisUser;
-            
-            //if (userResult != null)
-            //{
-            //    return true;
-            //}
 
             return false;
 
