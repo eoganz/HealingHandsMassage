@@ -58,7 +58,7 @@ textarea {
 
 .main-para
 {
-    margin-top:15px;
+    margin-top:25px;
     font-size: 1.25em;
 }
 
@@ -66,18 +66,17 @@ textarea {
     background-color: #61cced;
 }
 
-.mainHeader
-{
-    position:relative;
-    text-align:center;
-    color: green;
+.mainHeader {
+    position: relative;
+    text-align: center;
+    color: #ab6729;
 }
 
 .headerText
 {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 85px;
     left: 50%;
     font-size: 50%;
 }
@@ -85,7 +84,7 @@ textarea {
 .footer
 {
     position: absolute;
-    bottom: 1px;
+    bottom: 5px;
     width: 95%;
     margin-left: 2.5%;
 }
