@@ -58,6 +58,8 @@ textarea {
 
 .main-para
 {
+    margin-top:15px;
+    font-size: 1.25em;
 }
 
 .body-content {
@@ -80,11 +82,11 @@ textarea {
     font-size: 50%;
 }
 
-footer
+.footer
 {
-    position: relative;
-    height: 30px;
-    margin-top: -100px;
-    clear:both;
+    position: absolute;
+    bottom: 1px;
+    width: 95%;
+    margin-left: 2.5%;
 }
 
