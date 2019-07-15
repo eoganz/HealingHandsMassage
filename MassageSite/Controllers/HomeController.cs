@@ -30,5 +30,12 @@ namespace MassageSite.Controllers
             return View();
         }
 
+        public ActionResult Massages()
+        {
+            ViewBag.Message = "Massage List";
+
+            return View()
+        }
+
     }
 }
