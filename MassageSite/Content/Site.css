@@ -34,12 +34,6 @@ textarea {
     margin-right: 1.25em;
 }
 
-.rightEditableBox
-{
-    float: right;
-    border: 2.5px solid black;
-}
-
 .mainIntro
 {
     position: relative;
@@ -47,8 +41,9 @@ textarea {
     display:flex;
 }
 
-.rightEditableBox
-{
+.rightEditableBox {
+    float: right;
+    border: 2.5px solid black;
     padding: 10px;
     margin-left: 40px;
     margin-top: 30px;
