@@ -64,6 +64,7 @@ textarea {
 
 .body-content {
     background-color: #61cced;
+    height:100vh;
 }
 
 .mainHeader {
@@ -83,7 +84,7 @@ textarea {
 
 .footer
 {
-    position: absolute;
+    position:absolute;
     bottom: 5px;
     width: 95%;
     margin-left: 2.5%;
