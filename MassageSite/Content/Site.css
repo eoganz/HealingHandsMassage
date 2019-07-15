@@ -41,13 +41,15 @@ textarea {
     display:flex;
 }
 
-.rightEditableBox {
+.rightEditableBox 
+{
     float: right;
     border: 2.5px solid black;
     padding: 10px;
     margin-left: 40px;
     margin-top: 30px;
     background-color: white;
+    width: 30%;
 }
 
 .home-Pic
