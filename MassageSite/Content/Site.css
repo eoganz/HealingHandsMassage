@@ -42,13 +42,16 @@ textarea {
 
 .mainIntro
 {
+    position: relative;
+    margin-top: 120px;
     display:flex;
 }
 
 .rightEditableBox
 {
     padding: 10px;
-    margin: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
     background-color: white;
 }
 
@@ -69,14 +72,14 @@ textarea {
 .mainHeader {
     position: relative;
     text-align: center;
-    color: #ab6729;
+    color: #bd6619;
 }
 
 .headerText
 {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 85px;
+    top: 60px;
     left: 50%;
     font-size: 50%;
 }
