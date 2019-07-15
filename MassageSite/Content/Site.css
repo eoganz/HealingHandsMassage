@@ -90,3 +90,7 @@ textarea {
     margin-left: 2.5%;
 }
 
+.massageList
+{
+    list-style-type: none;
+}

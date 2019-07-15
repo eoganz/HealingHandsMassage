@@ -34,7 +34,7 @@ namespace MassageSite.Controllers
         {
             ViewBag.Message = "Massage List";
 
-            return View()
+            return View();
         }
 
     }
