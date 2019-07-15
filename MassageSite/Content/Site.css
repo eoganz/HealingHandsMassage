@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #61cced;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -32,3 +33,60 @@ textarea {
 {
     margin-right: 1.25em;
 }
+
+.mainIntro
+{
+    position: relative;
+    margin-top: 120px;
+    display:flex;
+}
+
+.rightEditableBox 
+{
+    float: right;
+    border: 2.5px solid black;
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
+    background-color: white;
+    width: 30%;
+}
+
+.home-Pic
+{
+}
+
+.main-para
+{
+    margin-top:25px;
+    font-size: 1.25em;
+}
+
+.body-content {
+    background-color: #61cced;
+    height:100vh;
+}
+
+.mainHeader {
+    position: relative;
+    text-align: center;
+    color: #bd6619;
+}
+
+.headerText
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60px;
+    left: 50%;
+    font-size: 50%;
+}
+
+.footer
+{
+    position:absolute;
+    bottom: 5px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+

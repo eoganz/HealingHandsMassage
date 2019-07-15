@@ -19,9 +19,18 @@ namespace MassageSite.Models
         public virtual DbSet<User> Users { get; set; }
 
 
-        public User GetUserById(int id)
+
+        public User GetUserByPhoneNumber(string phoneNumber)
         {
-            return Users.Find(id);
+            foreach(var user in Users)
+            {
+                if(phoneNumber == user.PhoneNumber)
+                {
+                    return user;
+                }
+            }
+
+            return null;
         }
     }
 }
