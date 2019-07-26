@@ -11,6 +11,7 @@
 </div>
 
 
+
 <div class="mainIntro">
     <div class="main-para">
         <p>
@@ -18,7 +19,12 @@
     
         </p>
     </div>
+    <script>
+        var editor = new Quill('.rightEditableBox');
 
+        var text = editor.getText(0, 10);
+        console.writeline(text);
+    </script>
     <div class="rightEditableBox">
         <b>Stretches</b>
         <p>
