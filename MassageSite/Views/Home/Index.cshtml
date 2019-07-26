@@ -16,18 +16,14 @@
     <div class="main-para">
         <p>
             I am an occupational therapist that specilizes in all sorts of massages. These include sports injury, deep tissue, pre/post natal, craniosacral, relaxation, symphatic drainage, and detox. Most massages come with stretching of the muscles as well.
-    
+
         </p>
     </div>
-    <script>
-        var editor = new Quill('.rightEditableBox');
 
-        var text = editor.getText(0, 10);
-        console.writeline(text);
-    </script>
+
     <div class="rightEditableBox">
         <b>Stretches</b>
-        <p>
+        <p class="editText">
             Will fill with stretching pics and information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales venenatis justo, sit amet rutrum dolor pellentesque quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam semper ultrices ipsum sed condimentum. Proin aliquam, neque et fringilla ornare, metus dolor varius mauris, vitae porta enim metus quis est. Etiam vestibulum turpis blandit dui vehicula, sed malesuada massa vehicula. Vestibulum vestibulum, massa vitae condimentum vulputate, ipsum mi congue urna, convallis egestas arcu justo non mi. Mauris convallis felis ac augue malesuada aliquet. Nullam a est convallis, dictum augue quis, eleifend erat. Suspendisse ultricies elit in justo rutrum, id euismod leo hendrerit. Aliquam erat volutpat.
 
             Nam ligula quam, consequat in rhoncus in, tempus dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean ac diam hendrerit, lacinia arcu eget, varius augue. Etiam eget metus sodales metus consectetur aliquam eu sed sapien. Vivamus ac luctus ex. Vivamus in lorem tempor, sagittis nunc eget, consectetur turpis. Integer ultrices lectus accumsan diam molestie, in lacinia nunc venenatis. Vestibulum eu sem vel dolor volutpat volutpat eget a orci. Nunc a sodales mi. Nam sollicitudin efficitur nulla. Duis non blandit ante. Vestibulum vel dui nisl.
@@ -38,8 +34,17 @@
 
             Sed ultrices augue vitae mollis sagittis. Sed nec ex nec est feugiat scelerisque. Nam vitae suscipit velit. Curabitur venenatis dui sed dolor posuere, et maximus augue condimentum. Duis semper vestibulum ex, sed molestie felis congue eget. Cras placerat convallis mi, in tempus lorem vestibulum ac. Quisque quis nibh porttitor, imperdiet neque ut, volutpat dolor. Curabitur blandit nisl ac dolor tempor malesuada tincidunt a est. Fusce sed ex a libero feugiat ultricies ut et tortor. Etiam ac feugiat quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </p>
-        
+
 
 
     </div>
+    <script>
+
+        //var box = document.getElementById('rightEditableBox');
+        var editor = new Quill('.editText');
+
+        var text = editor.getText();
+        alert(text);
+
+    </script>
 </div>
