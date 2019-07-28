@@ -33,16 +33,30 @@
 
         <!--
             Server side command for when admin is set up
-            if user == admin -->
-
-        <button>Edit</button>
+            if user == admin 
+            
+            Need to decide how I want to do this -->
+            <input  type="button" value="Edit" onclick="OpenEditor()"/>
+            <input type="button" value="Finish" onclick="FinishUp()"/>
 
     </div>
+
     <script>
+
+        function OpenEditor()
+        {
+            editor.enable(true);
+            return;
+        }
+
+        function FinishUp()
+        {
+            editor.disable();
+            return;
+        }
 
         //Creates quill container with readonly option true
         var editor = new Quill('.editText', { readOnly: true } );
-        
         
 
         var text = editor.getText();
