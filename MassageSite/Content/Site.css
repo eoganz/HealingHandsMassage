@@ -94,3 +94,8 @@ textarea {
 {
     list-style-type: none;
 }
+
+.specials
+{
+    float: right;
+}
