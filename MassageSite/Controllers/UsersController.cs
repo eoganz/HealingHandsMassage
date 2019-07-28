@@ -51,14 +51,16 @@ namespace MassageSite.Controllers
             if (ModelState.IsValid)
             {
 
-                UserHelper.CheckCredentials(user.Email, user.Password, db);
-                if (user != null)
+                var correct = UserHelper.CheckCredentials(user.Email, user.Password, db);
+                if (user != null && correct == true)
                 {
                     return RedirectToAction("Index");
                 }
+                
             }
+            
             return View();
-
+            
 
         }
 
