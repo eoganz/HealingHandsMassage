@@ -28,23 +28,25 @@
 
             Nam ligula quam, consequat in rhoncus in, tempus dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean ac diam hendrerit, lacinia arcu eget, varius augue. Etiam eget metus sodales metus consectetur aliquam eu sed sapien. Vivamus ac luctus ex. Vivamus in lorem tempor, sagittis nunc eget, consectetur turpis. Integer ultrices lectus accumsan diam molestie, in lacinia nunc venenatis. Vestibulum eu sem vel dolor volutpat volutpat eget a orci. Nunc a sodales mi. Nam sollicitudin efficitur nulla. Duis non blandit ante. Vestibulum vel dui nisl.
 
-            Nam sit amet tincidunt libero, et convallis quam. Suspendisse ut vulputate magna. Vivamus quis nisl maximus, rhoncus sem vel, convallis lectus. Nam lacinia vestibulum neque, et rutrum nibh vestibulum id. Mauris laoreet vulputate lacinia. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer bibendum pretium volutpat. Sed sodales neque sed interdum pharetra. Vivamus suscipit orci quis imperdiet interdum.
-
-            Pellentesque non elit at ipsum egestas fringilla. Nam tincidunt ipsum eget quam sagittis convallis vel eget quam. Vivamus fringilla tellus orci, vitae pharetra dolor eleifend sed. Vivamus molestie pulvinar ligula, eget fringilla velit sagittis ac. Donec rutrum nec dui non sagittis. Cras faucibus massa sed eros auctor aliquet. Morbi at orci rhoncus, aliquam ex sed, fermentum quam.
-
             Sed ultrices augue vitae mollis sagittis. Sed nec ex nec est feugiat scelerisque. Nam vitae suscipit velit. Curabitur venenatis dui sed dolor posuere, et maximus augue condimentum. Duis semper vestibulum ex, sed molestie felis congue eget. Cras placerat convallis mi, in tempus lorem vestibulum ac. Quisque quis nibh porttitor, imperdiet neque ut, volutpat dolor. Curabitur blandit nisl ac dolor tempor malesuada tincidunt a est. Fusce sed ex a libero feugiat ultricies ut et tortor. Etiam ac feugiat quam. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </p>
 
+        <!--
+            Server side command for when admin is set up
+            if user == admin -->
 
+        <button>Edit</button>
 
     </div>
     <script>
 
-        //var box = document.getElementById('rightEditableBox');
-        var editor = new Quill('.editText');
+        //Creates quill container with readonly option true
+        var editor = new Quill('.editText', { readOnly: true } );
+        
+        
 
         var text = editor.getText();
-        alert(text);
+        //alert(text);
 
     </script>
 </div>
