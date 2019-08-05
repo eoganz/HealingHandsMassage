@@ -16,6 +16,8 @@ namespace MassageSite.Controllers
             return View();
         }
 
+        public ActionResult Index()
+
         public ActionResult About()
         {
             ViewBag.Message = "About us";

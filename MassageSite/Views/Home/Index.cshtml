@@ -22,8 +22,9 @@
 
 
     <div class="rightEditableBox">
+        <form>
         <b>Stretches</b>
-        <p class="editText">
+        <p class="editText" id="editText">
             Will fill with stretching pics and information Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales venenatis justo, sit amet rutrum dolor pellentesque quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam semper ultrices ipsum sed condimentum. Proin aliquam, neque et fringilla ornare, metus dolor varius mauris, vitae porta enim metus quis est. Etiam vestibulum turpis blandit dui vehicula, sed malesuada massa vehicula. Vestibulum vestibulum, massa vitae condimentum vulputate, ipsum mi congue urna, convallis egestas arcu justo non mi. Mauris convallis felis ac augue malesuada aliquet. Nullam a est convallis, dictum augue quis, eleifend erat. Suspendisse ultricies elit in justo rutrum, id euismod leo hendrerit. Aliquam erat volutpat.
 
             Nam ligula quam, consequat in rhoncus in, tempus dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean ac diam hendrerit, lacinia arcu eget, varius augue. Etiam eget metus sodales metus consectetur aliquam eu sed sapien. Vivamus ac luctus ex. Vivamus in lorem tempor, sagittis nunc eget, consectetur turpis. Integer ultrices lectus accumsan diam molestie, in lacinia nunc venenatis. Vestibulum eu sem vel dolor volutpat volutpat eget a orci. Nunc a sodales mi. Nam sollicitudin efficitur nulla. Duis non blandit ante. Vestibulum vel dui nisl.
@@ -37,11 +38,17 @@
             
             Need to decide how I want to do this -->
             <input  type="button" value="Edit" onclick="OpenEditor()"/>
-            <input type="button" value="Finish" onclick="FinishUp()"/>
-
+            <input type="button" formmethod="post" value="Finish" onclick="FinishUp()"/>
+            </form>
     </div>
 
     <script>
+
+        //Creates quill container with readonly option true
+        var editor = new Quill('.editText', { readOnly: true });
+
+
+        editor.on('text-change', function (delta, source) { console.log('text-change', delta, source) });
 
         function OpenEditor()
         {
@@ -51,13 +58,12 @@
 
         function FinishUp()
         {
+            editor.update();
             editor.disable();
             return;
         }
 
-        //Creates quill container with readonly option true
-        var editor = new Quill('.editText', { readOnly: true } );
-        
+
 
         var text = editor.getText();
         //alert(text);
