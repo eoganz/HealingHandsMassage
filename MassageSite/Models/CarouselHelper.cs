@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -9,18 +10,31 @@ namespace MassageSite.Models
     public class CarouselHelper
     {
         //Haven't integrated yet. Need to make sure I don't need more fields
-        [Key]
-        int number;
-        string link;
-        string errorText;
         
+        public virtual DbSet<Image> Images { get; set; }
 
-        public CarouselHelper(string link, string errorText)
+
+        public void RotateCarousel(int currNum, string href)
         {
-            this.link = link;
-            this.errorText = errorText;
+            throw new NotImplementedException();
         }
 
 
     }
+
+    public class Image
+    {
+        string Link;
+        string ErrorText;
+        string Caption;
+
+        public Image(string link, string errorText, string caption)
+        {
+            this.Link = link;
+            this.ErrorText = errorText;
+            this.Caption = caption;
+            
+        }
+    }
+
 }

@@ -10,6 +10,7 @@ namespace MassageSite.Controllers
 {
     public class HomeController : Controller
     {
+        CarouselHelper Carousel = new CarouselHelper();
         
         public ActionResult Index()
         {
