@@ -46,7 +46,7 @@
 
         //Creates quill container with readonly option true
         var editor = new Quill('.editText', { readOnly: true });
-        var Module = Quill.import('core/module');
+        var Module = Quill.import('delta');
 
         editor.on('text-change', function (delta, source) { console.log('text-change', delta, source) });
 
@@ -58,13 +58,13 @@
 
         function FinishUp()
         {
-            Quill.register('modules/custom-module', CustomModule);
+            Quill.register();
             editor.disable();
             return;
         }
 
         
-        console.log(text);
+        //console.log(text);
 
     </script>
 </div>
